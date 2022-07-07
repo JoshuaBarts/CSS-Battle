@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="position">
+  <div class="a"></div>
+  <div class="b"></div>
+</div>
+  <div class="c"></div>
+  <div class="d"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #62306D;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    height: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .position {
+    margin-left: -25px;
+   
+  }
+  .a {
+    z-index:1;
+   	position: absolute;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: #AA445F;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+   	
+  }
+  .b {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+    border-radius: 50%;
+    z-index: 5;
+    top: 0;
+  }
+  .c {
+    margin-left: 20px;
+    left: 100px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+    border-radius: 50%;
+    z-index: 1
+  }
+  .d {
+    margin-left: 20px;
+   	position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background: #E38F66;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: rotate(180deg);
+  }
+</style>
