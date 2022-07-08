@@ -1,0 +1,40 @@
+<li class="a"></li>
+<li class="a"></li>
+<li class="a"></li>
+<li class="a"></li>
+<li class="a" style="background:#F5D6B4"></li>
+<li class="a" style="background:#F09462"></li>
+<li class="a" style="background:#F5D6B4"></li>
+<li class="a" style="background:#F09462"></li>
+<li class="a"></li>
+<li class="a"></li>
+<li class="a"></li>
+<li class="a"></li>
+
+<style>
+  body {
+    
+    display: grid;
+    grid-template-columns: 100px 100px  100px 100px;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #5C434C;
+  }
+  .a{
+    list-style-type: none;
+    margin-left: 10px;
+    border-top-left-radius: 100px;
+    width: 80px;
+    height: 80px;
+    
+  }
+  li.a:nth-child(odd) {
+    background: #F09462;
+  }
+  li.a:nth-child(even) {
+    background: #F5D6B4;
+  }
+  
+</style>
